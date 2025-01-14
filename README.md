@@ -1,0 +1,1 @@
+This repository demonstrates a subtle bug in HTML/JavaScript interaction.  Attempting to access and modify the `innerHTML` of a non-existent element does not result in an error, but it also doesn't change the page's content. This silent failure can be difficult to debug. The `bug.html` file showcases the problem, while `bugSolution.html` offers a solution using error handling.
