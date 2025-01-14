@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    // Attempting to modify a non-existent element will not throw an error,
+    // but will also not change anything on the page.
+    document.getElementById('nonExistentElement').innerHTML = "This text won't appear.";
+  </script>
+</body>
+</html>
